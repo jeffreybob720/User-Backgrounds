@@ -10,7 +10,7 @@ const { TextBadge } = goosemod.webpackModules.findByProps('TextBadge');
 
 let database;
 (async () => { // Fetch and load DB async
-  database = (await (await fetch('https://raw.githubusercontent.com/Discord-Custom-Covers/usrbg/master/dist/usrbg.json')).json()).reduce((acc, x) => { acc[x.uid] = x.img; return acc; }, {})
+  database = (await (await fetch('https://raw.githubusercontent.com/jeffreybob720/usrbg/master/dist/usrbg.json')).json()).reduce((acc, x) => { acc[x.uid] = x.img; return acc; }, {})
 })();
 
 
